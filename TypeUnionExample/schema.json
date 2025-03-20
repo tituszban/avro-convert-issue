@@ -1,0 +1,38 @@
+{
+  "type": "record",
+  "name": "TypeWithUnionAvro",
+  "namespace": "TypeUnionExampleAvro",
+  "fields": [
+    {
+      "name": "TopLevelField",
+      "type": "string"
+    },
+    {
+      "name": "UnionField",
+      "type": [
+        {
+          "type": "record",
+          "name": "ObjA",
+          "namespace": "TypeUnionExampleAvro",
+          "fields": [
+            {
+              "name": "FieldA",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "type": "record",
+          "name": "ObjB",
+          "namespace": "TypeUnionExampleAvro",
+          "fields": [
+            {
+              "name": "FieldB",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
