@@ -5,5 +5,6 @@
     &lt;TestId&gt;NUnit3x::3D211BDB-B8F5-444A-9786-9222D83B47F4::net8.0::TypeUnionExample.Tests.AvroWrite_AvroRead&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::3D211BDB-B8F5-444A-9786-9222D83B47F4::net8.0::TypeUnionExample.Tests.GenerateModel&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::3D211BDB-B8F5-444A-9786-9222D83B47F4::net8.0::TypeUnionExample.Tests.AvroWrite_AvroConvertRead&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::3D211BDB-B8F5-444A-9786-9222D83B47F4::net8.0::TypeUnionExample.AvroBenchmarkTests.RunBenchmarks&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

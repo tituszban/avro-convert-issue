@@ -106,10 +106,10 @@ public class Tests
             Assert.That(readRecords.Count, Is.EqualTo(2));
             Assert.That(readRecords[0].TopLevelField, Is.EqualTo("TopLevelField1"));
             // This fails, because the UnionField doesn't have any of data
-            Assert.That(readRecords[0].UnionField is AvroConvertModel.TargetObjA { FieldA: "FieldA1" });
+            Assert.That(readRecords[0].UnionField is AvroConvertModel.ObjA { FieldA: "FieldA1" });
             Assert.That(readRecords[1].TopLevelField, Is.EqualTo("TopLevelField2"));
             // This too fails for the same reason
-            Assert.That(readRecords[1].UnionField is AvroConvertModel.TargetObjB { FieldB: "FieldB2" });
+            Assert.That(readRecords[1].UnionField is AvroConvertModel.ObjB { FieldB: "FieldB2" });
         });
     }
 }

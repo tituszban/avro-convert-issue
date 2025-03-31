@@ -7,18 +7,16 @@ public class TypeWithUnionAvro
 {
     public string TopLevelField { get; set; }
     
-    [AvroUnion(typeof(TargetObjA), typeof(TargetObjB))]
+    [AvroUnion(typeof(ObjA), typeof(ObjB))]
     public object UnionField { get; set; }
 }
 
-[DataContract(Name = "ObjA")]
-public class TargetObjA
+public class ObjA
 {
     public string FieldA { get; set; }
 }
 
-[DataContract(Name = "ObjB")]
-public class TargetObjB
+public class ObjB
 {
     public string FieldB { get; set; }
 }
